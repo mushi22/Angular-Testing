@@ -12,6 +12,10 @@
                 controller: 'OrdersController',
                 templateUrl: 'app/views/orders.html'
             })
+            .when('/login', {
+                controller: 'LoginController',
+                templateUrl: 'app/views/orders.html'
+            })
             .otherwise( { redirectTo: '/' } );
     });
     
