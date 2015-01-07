@@ -1,10 +1,22 @@
 <h2> Login Screen</h2>
-
+<!--
 <div ng-app="" ng-controller="LoginController">
 
-First Name: <input type="text" ng-model="firstName"><br>
-Last Name: <input type="text" ng-model="lastName"><br>
+UserName: <input type="text" ng-model="firstName" id="firstName"><br>
+Password: <input type="text" ng-model="lastName" id="lastname"><br>
+<button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+
 <br>
 Full Name: {{firstName + " " + lastName}}
 
-</div>
+</div> -->
+
+
+<form ng-submit='login()' class="form-signin">
+        <h2 class="form-signin-heading">Login</h2>
+        <label for="inputEmail" class="sr-only">Email address</label>
+        <input ng-model='user.email' type="text" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+        <label ng-model='user.password' for="inputPassword" class="sr-only">Password</label>
+        <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+        <button class="btn btn-lg btn-primary btn-block" type="submit">Login</button>
+      </form>
